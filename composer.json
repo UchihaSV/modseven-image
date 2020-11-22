@@ -1,0 +1,49 @@
+{
+	"name":        "modseven/image",
+	"type":        "modseven-module",
+	"description": "Modseven module for manipulating images - fork from koseven/image",
+	"homepage":    "http://kohanaframework.org",
+	"license":     "BSD-3-Clause",
+	"keywords":    ["kohana", "framework", "image", "modseven"],
+	"authors": [
+		{
+			"name": 	"Paweł Jarzyniak",
+			"homepage": "https://github.com/pjarzyniak/modseven-image"
+		},
+		{
+			"name":     "Kohana Team",
+			"email":    "team@kohanaframework.org",
+			"homepage": "http://kohanaframework.org/team",
+			"role":     "developer"
+		}
+	],
+	"support": {
+		"issues":   "http://dev.kohanaframework.org",
+		"forum":    "http://forum.kohanaframework.org",
+		"irc":      "irc://irc.freenode.net/kohana",
+		"source":   "https://github.com/pjarzyniak/modseven-image"
+	},
+	"require": {
+		"modseven/core":       "*",
+		"php":                 ">=7.4",
+		"ext-imagick": 			"*",
+		"ext-gd": 				"*"
+	},
+	"require-dev": {
+		"phpunit/phpunit":	"^9.3"
+	},
+
+	"suggest": {
+		"ext-gd":   "*"
+	},
+	"autoload": {
+		"psr-4": {
+			"Modseven\\Image\\": "classes"
+		}
+	},
+	"extra" : {
+		"modseven" : true
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true
+}
